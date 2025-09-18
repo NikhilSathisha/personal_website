@@ -3,50 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Your Name] | Personal Website</title>
+  <title>Nikhil Sathisha | Personal Website</title>
   <link rel="stylesheet" href="globals.css" />
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo"><h2>YourName</h2></div>
-    <div class="links">
+    <div><h2>Nikhil Sathisha</h2></div>
+    <div>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Content -->
   <div class="container">
     <section id="about">
-      <h1>Hello, I’m [Your Name]</h1>
+      <h1>About Me</h1>
       <p>
-        I’m a student, developer, and builder. This website is my corner of the internet where I share my work and ideas.
+        I am a Computer Science and Electrical Engineering student from Cary, NC at Georgia Tech, passionate about systems, AI, and robotics.
+
       </p>
+    </section>
+    <section id="featured-links">
+    <h2>Featured Projects & Links</h2>
+    <div class="projects-scroll">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+        <h3>ML Project: Alzheimer’s Detection</h3>
+        <p>
+            Worked on KNN implementation for an ML model detecting Alzheimer’s.
+            Collaborative Georgia Tech Fall ’24 project.
+        </p>
+        <a href="https://github.gatech.edu/pages/tadani3/fall-24-ml-project/" target="_blank">
+            View Project
+        </a>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+        <h3>GoalArena</h3>
+        <p>
+            Contributed to <em>GoalArena</em>, a collaborative repo. 
+            Features implementations for goal-based AI environments.
+        </p>
+        <a href="https://github.com/rmmhm/GoalArena" target="_blank">
+            View Repository
+        </a>
+        </div>
+
+        <!-- Future Cards -->
+        <div class="project-card">
+        <h3>+</h3>
+        <p>Add more projects here in the future.</p>
+        <a href="#">Coming Soon</a>
+        </div>
+    </div>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Georgia Institute of Technology</strong>, Atlanta, GA</p>
+      <p>B.S. Computer Science (Systems & Architecture, Intelligence), May 2026</p>
+      <p>B.S. Electrical Engineering (Signal & Info Processing, Circuit Technology), GPA: 3.73</p>
+      <p><em>Coursework:</em> High Performance Computing, Algorithms, Operating Systems, Robotics & Perception, Embedded Systems, Processor Design, Machine Learning, NLP</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><span class="logo-placeholder"></span><strong>Honeywell Aerospace</strong> — Software Engineering Intern (May–Aug 2025)</p>
+      <ul>
+        <li>Designed ML and control software for Counter UAS applications.</li>
+      </ul>
+
+      <p><span class="logo-placeholder"></span><strong>Amazon</strong> — SDE Intern (May–Aug 2024)</p>
+      <ul>
+        <li>Built chatbot for Prime Video Resilience Portal using LangChain + Amazon Kendra.</li>
+        <li>Developed secure API (IAM, API Gateway) and custom React UI.</li>
+        <li>Deployed via CI/CD with 100% test coverage.</li>
+      </ul>
+
+      <p><span class="logo-placeholder"></span><strong>Dusty Robotics</strong> — Engineering Intern (May–Aug 2023)</p>
+      <ul>
+        <li>Implemented signal filtering algorithms in C++.</li>
+        <li>Automated antenna testing and data analysis (Python, pandas, Matplotlib).</li>
+        <li>Optimized antenna placement, reducing drops to zero at 60–90m.</li>
+      </ul>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Project One</strong> — short description here.</li>
-        <li><strong>Project Two</strong> — short description here.</li>
-        <li><strong>Project Three</strong> — short description here.</li>
+        <li><strong>Marine Robotics Group</strong> — Obstacle mapping & classification for RobotX competition.</li>
+        <li><strong>Squatify</strong> — Pose estimation + form scoring for injury prevention.</li>
+        <li><strong>Design OS Projects</strong> — xv6 optimizations: copy-on-write, threads, schedulers, users/permissions.</li>
+        <li><strong>Warehouse Automation Robot</strong> — Localization & RRT path planning for autonomous navigation.</li>
       </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <p><strong>Languages:</strong> Java, Python, C, C++, JavaScript, Shellscript, Assembly, HTML, CSS, MATLAB, Swift, LaTeX, VHDL, Verilog</p>
+      <p><strong>CAD:</strong> Onshape, OpenSCAD, Quartus, Autodesk tools, Blender</p>
+      <p><strong>Frameworks:</strong> Git, Kubernetes, Docker, React Native, MongoDB, Jira, AWS, Apache Kafka</p>
+      <p><strong>Libraries:</strong> pandas, NumPy, Matplotlib, Keras, OpenCV, scikit, BeautifulSoup</p>
+      <p><strong>OS:</strong> Linux (Fedora, RHEL, Ubuntu), xv6, Windows, VisionOS</p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <!-- View only (hide toolbar/download) -->
+      <iframe class="resume-viewer" src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email me at <a href="mailto:you@example.com">you@example.com</a></p>
-      <button onclick="window.location.href='mailto:you@example.com'">
-        Say Hello
-      </button>
+      <p>Email: <a href="mailto:sathisha.nikhil@gmail.com">sathisha.nikhil@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/NikhilSathisha">github.com/NikhilSathisha</a></p>
     </section>
   </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Your Name | Built with ❤️ and Tailwind</p>
-  </footer>
 </body>
 </html>
