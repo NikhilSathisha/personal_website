@@ -1,0 +1,113 @@
+/* globals.css */
+
+/* Tailwind Reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a; /* Deep black background */
+  --foreground: #ededed; /* Light text */
+  --primary-color: #1c7ee1; /* Bright blue */
+  --secondary-color: #1d2031; /* Deep navy/black */
+  --accent-color: #c0c0c4;   /* Light grey */
+  --accent-color-2: #272727; /* Dark grey */
+  --highlight-color: #1f2937; 
+  --dark-highlight-color: #444444;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+/* Base styles */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Geist Mono", monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geist Mono", monospace;
+  margin: 0 0 1rem;
+  color: var(--primary-color);
+}
+
+p, a, span, div {
+  font-family: "Geist Mono", monospace;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background-color: var(--secondary-color);
+  color: var(--foreground);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.navbar a {
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+/* Content wrapper */
+.container {
+  max-width: 900px;
+  margin: 100px auto 0;
+  padding: 0 2rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 4rem;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--accent-color);
+  border-top: 1px solid var(--accent-color-2);
+  margin-top: 4rem;
+}
