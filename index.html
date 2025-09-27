@@ -25,76 +25,96 @@
   <div class="container">
     <section id="about">
       <h1>About Me</h1>
-      <p>
-        I am a Computer Science and Electrical Engineering student from Cary, NC at Georgia Tech,
-        graduating in December 2026. I am passionate about systems, AI, and robotics, and I am
-        currently seeking internships where I can apply my skills in software engineering, embedded
-        systems, and machine learning.
-      </p>
-      <p>
-        In the long term, I aspire to work at the intersection of robotics, systems, and AI
-        building intelligent, autonomous robots, systems, devices, sensors that solve real-world problem. My experiences across robotics, ML, and system design have shaped this
-        vision, and I'm excited to keep developing along that path.
-      </p>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+        <div style="flex:1; min-width:250px;">
+          <p>
+            I am a Computer Science and Electrical Engineering student from Cary, NC at Georgia Tech,
+            graduating in December 2026. I am passionate about systems, AI, and robotics, and I am
+            currently seeking internships where I can apply my skills in software engineering, embedded
+            systems, and machine learning.
+          </p>
+          <p>
+            In the long term, I aspire to work at the intersection of robotics, systems, and AI —
+            building intelligent, autonomous robots and devices that solve real-world problems. My experiences
+            across robotics, ML, and system design have shaped this vision, and I’m excited to keep developing along that path.
+          </p>
+        </div>
+        <div style="flex:0 0 auto;">
+          <img src="media/IMG_0119.jpg" alt="Profile picture of Nikhil Sathisha" 
+               style="width:200px; height:200px; border-radius:50%; object-fit:cover; border:2px solid var(--primary-color);" />
+        </div>
+      </div>
     </section>
+
     <section id="featured-links">
-    <h2>Featured Projects & Links</h2>
-    <div class="projects-scroll">
+      <h2>Featured Projects & Links</h2>
+      <div class="projects-scroll">
         <!-- Project Card 1 -->
         <div class="project-card">
-        <h3>ML Project: Alzheimer's Detection</h3>
-        <p>
-            Worked on KNN implementation for an ML model detecting Alzheimer's.
-            Collaborative Georgia Tech Fall ’24 project.
-        </p>
-        <a href="https://github.gatech.edu/pages/tadani3/fall-24-ml-project/" target="_blank">
+          <h3>ML Project: Alzheimer’s Detection</h3>
+          <p>
+            Worked on KNN implementation for an ML model detecting Alzheimer’s. <br>
+            <em>Role:</em> Algorithm developer | <em>Skills:</em> Python, scikit-learn | 
+            <em>Outcome:</em> Improved classification accuracy on test data.
+          </p>
+          <a href="https://github.gatech.edu/pages/tadani3/fall-24-ml-project/" target="_blank">
             View Project
-        </a>
+          </a>
         </div>
 
         <!-- Project Card 2 -->
         <div class="project-card">
-        <h3>GoalArena</h3>
-        <p>
-            Contributed to <em>GoalArena</em>, a collaborative repo. 
-            Features implementations for goal-based AI environments.
-        </p>
-        <a href="https://github.com/rmmhm/GoalArena" target="_blank">
+          <h3>GoalArena</h3>
+          <p>
+            Contributed to <em>GoalArena</em>, a collaborative repo for goal-based AI environments. <br>
+            <em>Role:</em> Contributor | <em>Skills:</em> Python, GitHub collaboration | 
+            <em>Outcome:</em> Extended functionality and improved test coverage.
+          </p>
+          <a href="https://github.com/rmmhm/GoalArena" target="_blank">
             View Repository
-        </a>
+          </a>
         </div>
 
         <!-- Future Cards -->
         <div class="project-card">
-        <h3>+</h3>
-        <p>Add more projects here in the future.</p>
-        <a href="#">Coming Soon</a>
+          <h3>+</h3>
+          <p>Add more projects here in the future.</p>
+          <a href="#">Coming Soon</a>
         </div>
-    </div>
+      </div>
     </section>
+
     <section id="education">
       <h2>Education</h2>
       <p><strong>Georgia Institute of Technology</strong>, Atlanta, GA</p>
       <p>B.S. Computer Science (Systems & Architecture, Intelligence), Dec 2026</p>
       <p>B.S. Electrical Engineering (Signal & Info Processing, Circuit Technology), GPA: 3.73</p>
-      <p><em>Coursework:</em> High Performance Computing, Algorithms, Operating Systems, Robotics & Perception, Embedded Systems, Processor Design, Machine Learning, NLP</p>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
-      <p><span class="logo-placeholder"></span><strong>Honeywell Aerospace</strong> — Software Engineering Intern (May–Aug 2025)</p>
+      <p>
+        <img src="media/honeywell.png" alt="Honeywell logo" style="height:30px; vertical-align:middle; margin-right:8px;">
+        <strong>Honeywell Aerospace</strong> — Software Engineering Intern (May–Aug 2025)
+      </p>
       <ul>
         <li>Designed ML and control software for Counter UAS applications.</li>
       </ul>
 
-      <p><span class="logo-placeholder"></span><strong>Amazon</strong> — SDE Intern (May–Aug 2024)</p>
+      <p>
+        <img src="media/Amazon-logo-meaning.jpg" alt="Amazon logo" style="height:30px; vertical-align:middle; margin-right:8px;">
+        <strong>Amazon</strong> — SDE Intern (May–Aug 2024)
+      </p>
       <ul>
         <li>Built chatbot for Prime Video Resilience Portal using LangChain + Amazon Kendra.</li>
         <li>Developed secure API (IAM, API Gateway) and custom React UI.</li>
         <li>Deployed via CI/CD with 100% test coverage.</li>
       </ul>
 
-      <p><span class="logo-placeholder"></span><strong>Dusty Robotics</strong> — Engineering Intern (May–Aug 2023)</p>
+      <p>
+        <img src="media/dusty.png" alt="Dusty Robotics logo" style="height:30px; vertical-align:middle; margin-right:8px;">
+        <strong>Dusty Robotics</strong> — Engineering Intern (May–Aug 2023)
+      </p>
       <ul>
         <li>Implemented signal filtering algorithms in C++.</li>
         <li>Automated antenna testing and data analysis (Python, pandas, Matplotlib).</li>
@@ -103,12 +123,16 @@
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Additional Projects</h2>
       <ul>
-        <li><strong>Marine Robotics Group</strong> — Obstacle mapping & classification for RobotX competition.</li>
-        <li><strong>Squatify</strong> — Pose estimation + form scoring for injury prevention.</li>
-        <li><strong>Design OS Projects</strong> — xv6 optimizations: copy-on-write, threads, schedulers, users/permissions.</li>
-        <li><strong>Warehouse Automation Robot</strong> — Localization & RRT path planning for autonomous navigation.</li>
+        <li><strong>Marine Robotics Group</strong> — Obstacle mapping & classification for RobotX competition. <br>
+            <em>Role:</em> Algorithm design | <em>Skills:</em> ROS, LIDAR | <em>Outcome:</em> Reliable dynamic obstacle map.</li>
+        <li><strong>Squatify</strong> — Pose estimation + form scoring for injury prevention. <br>
+            <em>Role:</em> Lead developer | <em>Skills:</em> OpenCV, Python | <em>Outcome:</em> Scored squat form similarity with time alignment.</li>
+        <li><strong>Design OS Projects</strong> — xv6 kernel optimizations. <br>
+            <em>Role:</em> Systems engineer | <em>Skills:</em> C, OS concepts | <em>Outcome:</em> Implemented threads, scheduler, and secure user system.</li>
+        <li><strong>Warehouse Automation Robot</strong> — Localization & path planning. <br>
+            <em>Role:</em> Path planner | <em>Skills:</em> Particle filter, RRT | <em>Outcome:</em> Autonomous navigation in noisy environment.</li>
       </ul>
     </section>
 
@@ -131,6 +155,7 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:sathisha.nikhil@gmail.com">sathisha.nikhil@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/NikhilSathisha">github.com/NikhilSathisha</a></p>
+      <p><em>I am actively looking for internships in software engineering, robotics, and AI systems — feel free to reach out!</em></p>
     </section>
   </div>
 </body>
